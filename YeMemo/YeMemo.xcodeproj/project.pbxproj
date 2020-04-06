@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		0C2317022438944B00415088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2317012438944B00415088 /* AppDelegate.swift */; };
 		0C2317042438944B00415088 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2317032438944B00415088 /* SceneDelegate.swift */; };
-		0C2317062438944B00415088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2317052438944B00415088 /* ViewController.swift */; };
 		0C2317092438944B00415088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2317072438944B00415088 /* Main.storyboard */; };
 		0C23170C2438944B00415088 /* YeMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C23170A2438944B00415088 /* YeMemo.xcdatamodeld */; };
 		0C23170E2438944C00415088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C23170D2438944C00415088 /* Assets.xcassets */; };
 		0C2317112438944C00415088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C23170F2438944C00415088 /* LaunchScreen.storyboard */; };
+		0C23171A2439FAFF00415088 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2317192439FAFF00415088 /* Model.swift */; };
+		0C23171C243A1DBB00415088 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23171B243A1DBB00415088 /* MemoListTableViewController.swift */; };
+		0C23171E243B021800415088 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23171D243B021800415088 /* ComposeViewController.swift */; };
+		0C231720243B0B9000415088 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C23171F243B0B9000415088 /* UIViewController+Alert.swift */; };
+		0C231722243B3D9100415088 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C231721243B3D9100415088 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C2316FE2438944B00415088 /* YeMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2317012438944B00415088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C2317032438944B00415088 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C2317052438944B00415088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C2317082438944B00415088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C23170B2438944B00415088 /* YeMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YeMemo.xcdatamodel; sourceTree = "<group>"; };
 		0C23170D2438944C00415088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C2317102438944C00415088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C2317122438944C00415088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C2317192439FAFF00415088 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0C23171B243A1DBB00415088 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
+		0C23171D243B021800415088 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		0C23171F243B0B9000415088 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		0C231721243B3D9100415088 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,28 @@
 		0C2317002438944B00415088 /* YeMemo */ = {
 			isa = PBXGroup;
 			children = (
+				0C2317182439FA9B00415088 /* Model */,
 				0C2317012438944B00415088 /* AppDelegate.swift */,
 				0C2317032438944B00415088 /* SceneDelegate.swift */,
-				0C2317052438944B00415088 /* ViewController.swift */,
 				0C2317072438944B00415088 /* Main.storyboard */,
 				0C23170D2438944C00415088 /* Assets.xcassets */,
 				0C23170F2438944C00415088 /* LaunchScreen.storyboard */,
 				0C2317122438944C00415088 /* Info.plist */,
 				0C23170A2438944B00415088 /* YeMemo.xcdatamodeld */,
+				0C23171B243A1DBB00415088 /* MemoListTableViewController.swift */,
+				0C23171D243B021800415088 /* ComposeViewController.swift */,
+				0C23171F243B0B9000415088 /* UIViewController+Alert.swift */,
+				0C231721243B3D9100415088 /* DetailViewController.swift */,
 			);
 			path = YeMemo;
+			sourceTree = "<group>";
+		};
+		0C2317182439FA9B00415088 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C2317192439FAFF00415088 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C2317062438944B00415088 /* ViewController.swift in Sources */,
 				0C2317022438944B00415088 /* AppDelegate.swift in Sources */,
 				0C2317042438944B00415088 /* SceneDelegate.swift in Sources */,
+				0C23171C243A1DBB00415088 /* MemoListTableViewController.swift in Sources */,
+				0C23171E243B021800415088 /* ComposeViewController.swift in Sources */,
 				0C23170C2438944B00415088 /* YeMemo.xcdatamodeld in Sources */,
+				0C23171A2439FAFF00415088 /* Model.swift in Sources */,
+				0C231720243B0B9000415088 /* UIViewController+Alert.swift in Sources */,
+				0C231722243B3D9100415088 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
