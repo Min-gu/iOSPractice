@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yagom" translatesAutoresizingMaskIntoConstraints="NO" id="Fys-9Z-LjW">
+                                <rect key="frame" x="16" y="60" width="100" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fys-9Z-LjW" secondAttribute="height" multiplier="167:160" id="F7S-Ao-msE"/>
+                                    <constraint firstAttribute="width" constant="100" id="aed-ES-uws"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cH0-Oa-fuk">
+                                <rect key="frame" x="124" y="91" width="274" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZxE-c9-j5l">
+                                <rect key="frame" x="124" y="60" width="274" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KpI-T5-ZNi">
+                                <rect key="frame" x="124" y="122" width="274" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rJA-W0-uI7">
+                                <rect key="frame" x="16" y="172" width="382" height="674"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KpI-T5-ZNi" firstAttribute="bottom" secondItem="Fys-9Z-LjW" secondAttribute="bottom" id="0QP-N7-zu1"/>
+                            <constraint firstItem="ZxE-c9-j5l" firstAttribute="leading" secondItem="Fys-9Z-LjW" secondAttribute="trailing" constant="8" id="17F-QC-dCW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rJA-W0-uI7" secondAttribute="bottom" constant="16" id="9ae-Le-6dA"/>
+                            <constraint firstItem="cH0-Oa-fuk" firstAttribute="trailing" secondItem="ZxE-c9-j5l" secondAttribute="trailing" id="9pK-18-H0q"/>
+                            <constraint firstItem="cH0-Oa-fuk" firstAttribute="centerY" secondItem="Fys-9Z-LjW" secondAttribute="centerY" id="FUE-2T-f8h"/>
+                            <constraint firstItem="cH0-Oa-fuk" firstAttribute="leading" secondItem="ZxE-c9-j5l" secondAttribute="leading" id="Fpx-nX-qoD"/>
+                            <constraint firstItem="KpI-T5-ZNi" firstAttribute="trailing" secondItem="cH0-Oa-fuk" secondAttribute="trailing" id="GQ8-5N-Zu2"/>
+                            <constraint firstItem="rJA-W0-uI7" firstAttribute="trailing" secondItem="KpI-T5-ZNi" secondAttribute="trailing" id="MiY-np-jKX"/>
+                            <constraint firstItem="KpI-T5-ZNi" firstAttribute="leading" secondItem="cH0-Oa-fuk" secondAttribute="leading" id="Qye-Zp-AtO"/>
+                            <constraint firstItem="Fys-9Z-LjW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="SKK-sZ-Dwe"/>
+                            <constraint firstItem="rJA-W0-uI7" firstAttribute="leading" secondItem="Fys-9Z-LjW" secondAttribute="leading" id="bo6-mZ-9m1"/>
+                            <constraint firstItem="Fys-9Z-LjW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c9z-XI-u6y"/>
+                            <constraint firstItem="rJA-W0-uI7" firstAttribute="top" secondItem="Fys-9Z-LjW" secondAttribute="bottom" constant="16" id="hqu-YS-jSX"/>
+                            <constraint firstItem="ZxE-c9-j5l" firstAttribute="top" secondItem="Fys-9Z-LjW" secondAttribute="top" id="qyp-4D-hur"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZxE-c9-j5l" secondAttribute="trailing" constant="16" id="szD-6t-OWp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yagom" width="167" height="160.5"/>
+    </resources>
+</document>
